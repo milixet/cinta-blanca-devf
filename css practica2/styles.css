@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+}
+
+
+.tarjeta{
+    background-color: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: gray 1px 1px 1px;
+    /* */
+    float: left;
+    margin: 5px;
+    transition: all 500ms ease;
+
+   }
+   .tarjeta:hover{
+       transform: scale(1.2);
+       box-shadow: gray 10px 10px 10px;
+   }
+   .tarjeta p{
+       color: blueviolet;
+       text-align: center;
+   }
