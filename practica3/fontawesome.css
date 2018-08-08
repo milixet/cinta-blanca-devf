@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    background-color: lightgray;
+    }
+nav{
+    position: absolute;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    padding-bottom: 12px; 
+}
+
+
+nav .izq{
+
+    float: left;
+    padding-left: 20px;
+    
+}
+nav .der{
+    float: right;
+    padding-right: 20px;
+
+}
+.contenedor{
+    padding-top: 100px;
+}
+.tarjeta{
+    background-color: white;
+    height: 110px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: gray 1px 1px 1px;
+    /* */
+    float: left;
+    margin: 10px;
+    transition: all 500ms ease;
+    text-align: center;
+   
+
+
+
+}
+.tarjeta:hover{
+    transform: scale(1.2);
+    box-shadow: gray 10px 10px 10px;
+}
+.tarjeta p{
+    color:grey;
+    
+}
+.tarjeta i{
+    color: grey;
+    
+}
+
+
