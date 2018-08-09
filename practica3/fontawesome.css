@@ -27,9 +27,9 @@ nav .der{
 }
 .tarjeta{
     background-color: white;
-    height: 110px;
-    width: 100px;
-    padding: 10px;
+    height: auto;
+    width: 110px;
+    padding: 100px;
     border-radius: 5px;
     box-shadow: gray 1px 1px 1px;
     /* */

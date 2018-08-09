@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    
+}
+
+nav{
+    background-color: rgb(109, 12, 12);
+    position: absolute;
+    width: 100%;
+    padding-bottom: 20px;
+    
+}
+nav h1{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.cont1{
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+.cont1 img{
+    border-radius: 50%;
+    height: 100px;
+
+}
+.cont2{
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card1{
+    background-color: grey;
+    height: 200px;
+    width: 30%;
+    border-radius: 2px;
+    margin: 10px;
+    float: left;
+    color: blue;
+}
+.card2{
+    background-color: rgb(224, 14, 14);
+    height: 200px;
+    width: 30%;
+    border-radius: 2px;
+    margin: 10px;
+    float: left;
+    color: white;
+
+}
+
+
+
+.card3{
+    background-color: rgb(10, 10, 10);
+    height: 200px;
+    width: 30%;
+    border-radius: 2px;
+    margin: 10px;
+    float: left;
+    color: yellowgreen;
+}
+footer{
+    margin-top: 320px;
+    margin-left: 10px;
+    
+}
+
+p{
+    margin-top: 5px;
+}
+
+h1{
+    color: blue;
+}
+
+@media screen and (min-width: 420px) {
+    .cont2{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .card1{
+        background-color: grey;
+        height: 200px;
+        width: 30%;
+        border-radius: 2px;
+        margin: 10px;
+       float: none;
+        color: blue;
+    }
+    .card2{
+        background-color: rgb(224, 14, 14);
+        height: 200px;
+        width: 30%;
+        border-radius: 2px;
+        margin: 10px;
+        float: none;
+        color: white;
+    
+    }
+    
+    
+    
+    .card3{
+        background-color: rgb(10, 10, 10);
+        height: 200px;
+        width: 30%;
+        border-radius: 2px;
+        margin: 10px;
+        float:none;
+        color: yellowgreen;
+    }
+    
+}
