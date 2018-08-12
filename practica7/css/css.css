@@ -1,0 +1,21 @@
+.container-fluid{
+    background-color: rgb(118, 118, 235) !important;
+    height: 80px !important;
+}
+
+.navbar-brand img{
+    height:35px  !important;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+
+} 
+
+
+.menut{
+    font-family: 'Varela Round', sans-serif !important;
+    font-size: 30px !important;
+    color: white;
+   
+
+}
+
