@@ -1,0 +1,25 @@
+
+.col-1{
+    padding: 1px;
+}
+
+.col-1 div{
+    height: 60px;
+    width: 100%;
+}
+
+.fondoamarillo{
+    background-color: yellow;
+    box-shadow: 1px gray;
+    border-radius: 1px;
+}
+
+.blue{
+    background-color: blue;
+    box-shadow: 1px 1px gray;
+    border-radius: 1px;
+}
+
+
+
+

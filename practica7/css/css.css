@@ -18,4 +18,12 @@
    
 
 }
+.dropdown{
+    margin: 10px !important;
+    border-radius: 10px;
+}
+
+.btn btn-default navbar-btn{
+    float:right !important;
+}
 
