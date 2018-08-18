@@ -1,0 +1,16 @@
+body{
+    background-image: linear-gradient(to right,rgb(204, 201, 201), black);
+    margin: 4px;
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+    background-color: aquamarine;
+    box-shadow: 1px 1px 1px rgb(28, 46, 40);
+
+
+}
+button :hover{
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
