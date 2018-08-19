@@ -1,5 +1,6 @@
 body{
     background-color: aliceblue;
+    padding: 4%;
 }
 
 
@@ -11,7 +12,7 @@ body{
     box-shadow: gray 1px 1px 1px;
     /* */
     float: left;
-    margin: 5px;
+    margin: 0.5%;
     transition: all 500ms ease;
 
    }

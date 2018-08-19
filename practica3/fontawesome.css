@@ -24,12 +24,14 @@ nav .der{
 }
 .contenedor{
     padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .tarjeta{
     background-color: white;
     height: auto;
     width: 110px;
-    padding: 100px;
+    padding: 50px;
     border-radius: 5px;
     box-shadow: gray 1px 1px 1px;
     /* */
@@ -50,9 +52,14 @@ nav .der{
     color:grey;
     
 }
+
+
 .tarjeta i{
     color: grey;
     
 }
-
+.tarjeta i:hover{
+    color: blueviolet;
+    transform: scale(1.5);
+}
 
