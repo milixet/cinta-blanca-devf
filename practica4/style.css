@@ -1,31 +1,41 @@
 body{
     margin: 0px;
+    background-color: aliceblue;
     
+}
+p{
+    font-family: 'Lora', serif;
+    font-size: 25px;
 }
 
 nav{
     background-color: rgb(109, 12, 12);
     position: absolute;
     width: 100%;
-    padding-bottom: 20px;
+    padding: 1%;
     
 }
 nav h1{
     color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-family: 'Amaranth', sans-serif;
+    font-variant: normal;
+    letter-spacing: .2em;
+    font-size: 45px;
     
 }
 .cont1{
     padding-top: 150px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     
     
 }
 .cont1 img{
     border-radius: 50%;
     height: 200px;
+    margin-top: 20px;
 
 }
 .cont2{
@@ -34,6 +44,12 @@ nav h1{
     width: 100%;
     margin-left: 3%;
     
+}
+.cont2 p{
+    font-family: 'Amaranth', sans-serif !important;
+    font-style: bold !important;
+    font-size: 30px;
+
 }
 
 .card1{
