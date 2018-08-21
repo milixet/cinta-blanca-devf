@@ -1,0 +1,28 @@
+.container1{
+    background-color: blue;
+    height: 200px;
+
+}
+
+.container1 input{
+    
+    margin-left: 40%;
+    display: block;
+    margin-bottom: 5px;
+
+
+
+}
+hr{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px black;
+    margin-bottom: 2%;
+}
+
+.container1 button{
+    display: block;
+    margin-left: 40%;
+}
