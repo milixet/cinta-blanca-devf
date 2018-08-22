@@ -26,8 +26,12 @@ function creaTabla() {
             //creo arreglo de colores
             var colores = ['rojo', 'azul', 'verde'];
             for (var a = 0; a<= colores.length; a++) {
+                
+                tarjeta.classList.add(colores[a]); 
+                
+            }
                
-                tarjeta.classList.add(colores[a]);
+                
 
                 //aqui tengo que agragar el color
                 // tarjeta.classList.add('red');
@@ -45,7 +49,7 @@ function creaTabla() {
                 body.appendChild(tarjeta);
             }
 
-        }
+        
     }
 }
 /**
