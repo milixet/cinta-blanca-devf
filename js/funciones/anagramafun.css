@@ -1,28 +1,41 @@
-.container1{
-    background-color: blue;
+nav{
     height: 200px;
-
+    display: “flex”;
+    flex-direction: “row”;
+    width:100%;
+    justify-content: “center”;
+    align-items: “flex start”;
+}
+.container1{
+    margin-left: 20%;
+    
+    
 }
 
 .container1 input{
     
     margin-left: 40%;
     display: block;
-    margin-bottom: 5px;
-
-
+    margin-bottom: 10px;
+    
 
 }
-hr{
+.container1 hr {
     margin-left: 20%;
-    margin-right: 20%;
-    border: 0;
-    height: 0; 
-    box-shadow: 0 0 10px 1px black;
-    margin-bottom: 2%;
+    width: 330px;
+    border: 1px;
+    height: 5px;
+    text-align: center;
+    background-color: aqua; 
+    border-top: medium double #333; 
+    border-radius: 5px;
 }
-
 .container1 button{
     display: block;
     margin-left: 40%;
+}
+
+.tarjeta{
+    width: 50px;
+    background-color: green;
 }
