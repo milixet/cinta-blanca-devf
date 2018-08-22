@@ -47,3 +47,30 @@ input{
     width: auto;
 
 }
+
+.rojo{
+    background-color: #ff1616;
+    color: azure;
+    border: black;
+
+}
+.azul{
+    background-color: #3385c6;
+    color: azure;
+    border: black;
+
+}
+.verde{
+    background-color: #a3ff00;
+    color: azure;
+    border: black;
+
+}
+.amarillo{
+    background-color: #ffbf00;
+    color: azure;
+    border: black;
+
+}
+
+
