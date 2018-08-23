@@ -26,10 +26,10 @@ function creaTabla() {
             tarjeta.classList.add('tarjeta');
             
             //creo arreglo de colores
-            var colores = ['rojo', 'azul', 'verde'];
+            var colores = ['rojo', 'azul', 'verde','amarillo'];
 
             //valido que el contador para cambiar el color sea menor que el arreglo
-            if(a<=colores.length){
+            if(a<=colores.length-1){
                 //incremento contador
                 a++;
                    }else{

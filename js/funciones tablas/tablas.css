@@ -2,9 +2,14 @@ body{
     margin: 0px;
     background-color: aliceblue;
 }
+nav h1{
+    margin-top: 2px;
+    margin-left: 40%;
+    margin-bottom: 0%;
+}
 
 nav{
-    background-color: #dfcbd4;
+    background-color: #30c6fa;
     margin: 0%;
     height: 80px;
     padding: 20px 20px 10px 30px;
@@ -12,30 +17,30 @@ nav{
 }
 input button{
     border: none;
-    padding: 5px;
     background-color: antiquewhite;
 }
 
 input{
-    background-color: aquamarine;
+    background-color: rgb(205, 252, 236);
     height: 30px;
+    
 
 }
 
 .button{
+    margin-left: 15px;
     background-color: #13AFDF; 
 	border-radius: 50px;
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-size: 16px;
-	padding:0;
+	font-size: 25px;
+    padding:0;/* para que no tenga padding fuera de la figura*/
 	text-align: center;
-	text-transform: uppercase;
 	width: auto;
 }
 .button:hover {
-	background-color: #FB7E29;
+	background-color: rgb(202, 57, 231);
 	color: #fff;
 }
 
