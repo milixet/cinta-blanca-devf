@@ -17,22 +17,28 @@ function creaTabla() {
         //creo dos variable que me serviran para crear mis tablas
         //creo dos bucles para crear mis tablas
         var body = document.getElementsByTagName('body')[0];//body
-
+        //creo contador para cambiar el color
+        var a = 0;
         for (var indice = 1; indice <= numero; indice++) {
-
+            
             //genero la tabla
             var tarjeta = document.createElement('div');
             tarjeta.classList.add('tarjeta');
+            
             //creo arreglo de colores
             var colores = ['rojo', 'azul', 'verde'];
-            for (var a = 0; a<= colores.length; a++) {
-                
+
+            //valido que el contador para cambiar el color sea menor que el arreglo
+            if(a<=colores.length){
+                //incremento contador
+                a++;
+                   }else{
+                       a = 0;
+                   }
+                 
                 tarjeta.classList.add(colores[a]); 
                 
-            }
-               
                 
-
                 //aqui tengo que agragar el color
                 // tarjeta.classList.add('red');
 
