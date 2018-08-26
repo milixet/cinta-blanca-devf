@@ -3,36 +3,37 @@
  * estuvieramos pidiendo a servidor
  * @returns {JSON}
  */
-function pideInformacion(){
+
+function pideInformacion() {
     var informacion = {
-        'linea_blanca' : [
+        'linea_blanca': [
             {
-                'nombre':'Lavadora',
+                'nombre': 'Lavadora',
                 'precio': 500,
-                'stock' : 10,
+                'stock': 10,
             },
             {
-                'precio' : 2500,
-                'nombre' : 'horno',
-                'stock' : 14,
+                'precio': 2500,
+                'nombre': 'horno',
+                'stock': 14,
             },
             {
-                'nombre' : 'plancha',
-                'precio' : 500,
-                'stock' : 5,
+                'nombre': 'plancha',
+                'precio': 500,
+                'stock': 5,
             }
 
         ],
-        'electronicos' : [
+        'electronicos': [
             {
-                'nombre' : 'Nintendo SWITCH',
-                'precio' : 7000,
-                'stock' : 10,
+                'nombre': 'Nintendo SWITCH',
+                'precio': 7000,
+                'stock': 10,
             },
             {
-                'nombre' : 'PS4',
-                'preccio' : 7500,
-                'stock' : 4,
+                'nombre': 'PS4',
+                'preccio': 7500,
+                'stock': 4,
             },
 
         ]
@@ -44,22 +45,79 @@ function pideInformacion(){
     console.log(informacion.linea_blanca[1].nombre);
     console.log(informacion.linea_blanca[1].precio);
     */
+    return informacion;
 }
-pideInformacion();
+
+
 
 /**
- * Esta funcion 
+ * Esta funcion crea la tabla 
  * 
+ * @returns {JSON} data
+ * @see inicializa
  */
-function creaTabla(jsonObj){
+debugger;
+//extract value for header
+//decripcion, precio,
+function creaTabla(data) {
 
-    
+    var col = [];
+
+    for (var index = 0; index < data.length; index++) {
+        for (var key in data[index]) {
+            if (col.indexOf(key) === -1) {
+                col.push(key);
+            }
+        }
+    }
+
+    // create dynamic table
+    var table = document.createElement("table");
+
+    // create a dynamic html header row using the extracted heders
+    //insertrow insert a row in the table
+    var tr = table.insertRow(-1);
+
+    // table row
+
+    for (var index = 0; i < col.length; index++) {
+        var th = document.createElement("th");
+
+        //innerhtml return the html content of an element
+        th.innerHTML = col[i];
+        tr.appendChild(th);
+    }
+
+    //add JSON data to the table as rows
+    for (var j = 0; j < data.length; j++) {
+
+        //insertCell insert a cell in the row
+        var tabCell = tr.insertCell(-1);
+
+        tabCell.innerHTML = data[i][col[j]];
+
+    }
+    //create the table whit JSON data to a container
+
+    var divContainer = document.getElementById('container');
+    divContainer.innerHTML = "";
+    divContainer.appendChild(table);
+
+
 
 }
- 
-function inicializa(){
-    var header = document.querySelector("header");
-    var section = document.querySelector("section");
-    pideInformacion();
-    creaTabla();
+
+function inicializa() {
+
+    // pide la informacion
+    var data = pideInformacion();
+
+    // obten el body
+
+    var body = document.getElementsByTagName('body')[0];
+
+    //crea tabla
+    var tabla = creaTabla();
+
 }
+inicializa();
