@@ -53,68 +53,65 @@ function pideInformacion() {
 /**
  * Esta funcion crea la tabla 
  * 
- * @returns {JSON} data
+ * @param {JSON} data
  * @see inicializa
  */
-debugger;
+
 //extract value for header
 //decripcion, precio,
 function creaTabla(data) {
 
     var col = [];
-
-    for (var index = 0; index < data.length; index++) {
-        for (var key in data[index]) {
+    for (var i = 0; i < data.length; i++) {
+        for (var key in data[i]) {
             if (col.indexOf(key) === -1) {
                 col.push(key);
             }
         }
     }
 
-    // create dynamic table
+    // CREATE DYNAMIC TABLE.
     var table = document.createElement("table");
 
-    // create a dynamic html header row using the extracted heders
-    //insertrow insert a row in the table
+    // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
     var tr = table.insertRow(-1);
-
-    // table row
-
-    for (var index = 0; i < col.length; index++) {
+    // TABLE ROW.
+    for (var i = 0; i < col.length; i++) {
+        // TABLE HEADER.
         var th = document.createElement("th");
-
-        //innerhtml return the html content of an element
         th.innerHTML = col[i];
         tr.appendChild(th);
     }
 
-    //add JSON data to the table as rows
-    for (var j = 0; j < data.length; j++) {
+    // ADD JSON DATA TO THE TABLE AS ROWS.
+    for (var i = 0; i < data.length; i++) {
 
-        //insertCell insert a cell in the row
-        var tabCell = tr.insertCell(-1);
+        tr = table.insertRow(-1);
 
-        tabCell.innerHTML = data[i][col[j]];
-
+        for (var j = 0; j < col.length; j++) {
+            var tabCell = tr.insertCell(-1);
+            tabCell.innerHTML = data[i][col[j]];
+        }
     }
-    //create the table whit JSON data to a container
 
+    // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
     var divContainer = document.getElementById('container');
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
-
-
-
 }
 
+
+
+
+
 function inicializa() {
-
-    // pide la informacion
-    var data = pideInformacion();
-
     // obten el body
 
     var body = document.getElementsByTagName('body')[0];
+    // pide la informacion
+    var data = pideInformacion();
+
 
     //crea tabla
     var tabla = creaTabla();
