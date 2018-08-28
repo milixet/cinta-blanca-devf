@@ -3,7 +3,6 @@
  * estuvieramos pidiendo a servidor
  * @returns {JSON}
  */
-
 function pideInformacion() {
     var informacion = {
         'linea_blanca': [
@@ -53,7 +52,7 @@ function pideInformacion() {
 /**
  * Esta funcion crea la tabla 
  * 
- * @param {JSON} data
+ * @param {Array} data
  * @see inicializa
  */
 
@@ -75,7 +74,7 @@ function creaTabla(data) {
 
     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
-    var tr = table.insertRow(-1);
+    var tr = table.insertRow();
     // TABLE ROW.
     for (var i = 0; i < col.length; i++) {
         // TABLE HEADER.
@@ -87,14 +86,14 @@ function creaTabla(data) {
     // ADD JSON DATA TO THE TABLE AS ROWS.
     for (var i = 0; i < data.length; i++) {
 
-        tr = table.insertRow(-1);
+        tr = table.insertRow();
 
         for (var j = 0; j < col.length; j++) {
             var tabCell = tr.insertCell(-1);
             tabCell.innerHTML = data[i][col[j]];
         }
     }
-
+    debugger;
     // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
     var divContainer = document.getElementById('container');
     divContainer.innerHTML = "";
@@ -113,8 +112,11 @@ function inicializa() {
     var data = pideInformacion();
 
 
-    //crea tabla
-    var tabla = creaTabla();
+    //crea tabla electronicos
+    var tabla = creaTabla(data.electronicos);
+
+    //crea tabla linea blanca
+    //var tabla = creaTabla(data.linea_blanca);
 
 }
 inicializa();
