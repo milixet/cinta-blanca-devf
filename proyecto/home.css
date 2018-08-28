@@ -1,0 +1,13 @@
+nav{
+    
+    height: 80px;
+}
+.containerTopNav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: cyan;
+    
+}
+.containerTopNav ul li a{
+    color: rgb(26, 25, 25);
+}
