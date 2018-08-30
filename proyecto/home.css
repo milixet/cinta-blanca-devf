@@ -41,9 +41,13 @@ nav{
 
 }
 
-.oferspecial h1{
-  display: flex;
-  justify-content: center;
+.oferspecial{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    width: 100%;
 }
 
 
