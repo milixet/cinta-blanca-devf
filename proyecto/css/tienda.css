@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    text-align: center;
+    background-color: aliceblue;
+
+}
+
+.cont1{
+    background-color: #019797;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}   
+.cardp{
+    background-color: #008080;
+    padding: 80px;
+    display: flex;
+    flex-direction: "row";
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 10%;
+
+
+    
+}
+
+#button1{
+    background-color: #008080;
+    padding: 10px 20px 10px 20px;
+    border: 1px #c0daf3;
+    border-radius: 5px;
+}
+
+.conti{
+    background-color: #c0daf3;
+    padding: 30px 60px 30px 60px;
+    display: flex;
+    flex-direction: "row";
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+      
+}
+.card{
+    text-align: center;
+    margin: 5%;
+}
+
+.cont2{
+    margin-top: 3%;
+    margin-left: 12%;
+    margin-right: 10%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.producto{
+    height: 150px;
+    width: auto;
+}
