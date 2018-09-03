@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     background-color: #4ca8b2;
-    height: 30px;
+    height: 40px;
     
 }
 .containerTopNav ul li a{
@@ -78,12 +78,25 @@ nav{
 
 
 .footer{
+
     background-color:  #4ca8b2;
 }
 
 
+h1{
+    font-family: 'Crimson Text', serif;
+    
+}
+p{
+    font-family: 'Lora', serif;
+}
+h2{
+    font-family: 'Rokkitt', serif
 
-
+}
+h3{
+    font-family: 'Hind', sans-serif;
+}
 
 
 

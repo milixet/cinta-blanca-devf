@@ -1,0 +1,21 @@
+nav{
+    display: inline-block;
+    height: 90px;
+}
+.containerTopNav{
+    
+    background-color: #4ca8b2;
+    height: 40px;
+    width: 100%;
+    
+}
+.containerTopNav  a{
+    margin: 40px;
+    color: rgb(26, 25, 25);
+}
+
+#brandlogo {
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+}

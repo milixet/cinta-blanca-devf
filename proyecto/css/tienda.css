@@ -67,3 +67,7 @@ body{
     height: 150px;
     width: auto;
 }
+
+img{
+    border-radius: 10px;
+}
