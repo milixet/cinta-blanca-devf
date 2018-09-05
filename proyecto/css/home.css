@@ -1,26 +1,37 @@
 body{
     text-align: center;
-    background-color: rgba(167, 161, 161, 0.925);
+    background-color: aliceblue;
 }
-nav{
-    
-    height: 90px;
-}
+/* esto es para mi div de arriva del nav*/
+
 .containerTopNav{
-    display: flex;
-    justify-content: flex-end;
+    
     background-color: #4ca8b2;
     height: 40px;
     
 }
 .containerTopNav ul li a{
+    float: right;
+    display: inline;    
     color: rgb(26, 25, 25);
 }
 
-#brandlogo {
+/* esto es el css para mi nav*/
+
+nav{
+    
+    height: 90px;
+}
+
+#brandLogo {
     height: 80px;
-    padding: 5px;
-    margin: 5px;
+    border-radius: 5px;
+    border: 5px solid #ddd;
+    padding: 2px;
+
+}
+.nav-item{
+    float: right !important;
 }
 
 /*efecto parallax js con texto*/
@@ -102,13 +113,23 @@ h3{
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) { 
+    div.containerTopNav{
+        display: none;
+    }
+ }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    div.containerTopNav{
+        display: none;
+    }
+ }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+   
+
      /* show 3 items */
      .carousel-inner .active,
      .carousel-inner .active + .carousel-item,
@@ -174,8 +195,26 @@ h3{
 
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    div.containerTopNav{
+        display: none;
+    }
+    }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
