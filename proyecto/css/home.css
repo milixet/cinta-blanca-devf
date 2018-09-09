@@ -24,14 +24,15 @@ nav{
 }
 
 #brandLogo {
-    height: 80px;
+    height: 70px;
     border-radius: 5px;
     border: 5px solid #ddd;
     padding: 2px;
 
 }
-.nav-item{
-    float: right !important;
+/*eto es para alinear mis elementos  ul del nav a la derecha*/
+.mr-auto2{
+   margin-left: 50%;
 }
 
 /*efecto parallax js con texto*/
@@ -128,6 +129,10 @@ h3{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    div.containerTopNav{
+        display: none;
+    }
    
 
      /* show 3 items */
